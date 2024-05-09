@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: black;
+    color: white;
+  }
+  /* header */
+  #header {
+    width: 100%;
+    height: 100vh;
+   background-image: url(Images/Muah.png);
+   background-size: cover;
+   background-position: center;
+  }
+  .container {
+    padding: 10px 10%;
+    
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 140px;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  /* underline for the nav */
+  
+  .header-text{
+  margin: 10%;
+  font-size: 30px;
+  margin-left: 10%;
+  }
+  .header-text h1{
+    font-size: 100px;
+    margin-top: 20px;
+    color: #CD9C15;
+  }
+  .header-text p span {
+    font-size: 50px;
+    color: #ffffff;
+  }
+  /* header */
+  
+  /* about me*/
+  
+  #about{
+    padding: 80px 0;
+    color: white;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about-col-1{
+    flex-basis: 30%;
+  }
+  .about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  .about-col-2{
+    flex-basis: 70%;
+  }
+  
+  /* about me*/
+  
+  /* projects */
+  #projects{
+    padding: 30px 0;
+  }
+  .sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #CD9C15;
+  }
+  .tab-titles{
+    display: flex;
+    margin: 20px 0;
+  }
+  .tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+  .tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #CD9C15;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transform: 0.5;
+  }
+  .tab-links.active-link::after{
+    width: 50%;
+  }
+  .tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+  }
+  .tab-contents ul li s{
+    color: #CD9C15;
+    font-size: 14px;
+  }
+  .tab-contents{
+   display: none; 
+  }
+  .tab-contents.active-tab{
+    display: block;
+  }
+  .projects-list{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .projects {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .projects img{
+    width: 100%;
+    border-radius: 10px;
+    display: block; 
+  }
+  footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 14px;
+  }
+  footer h1{
+    font-size: x-large;
+  }
+  /* media */
+  nav .fas{
+    display: none;
+  }
+  @media only screen and (max-width: 600px){
+    #header {
+      background-image: url(Images/Memobile.png)
+    }
+    .header-text{
+      margin-top: 150px;
+      font-size: 25px;
+      left: 20%;
+    }
+    .header-text h1{
+      font-size: 60px;
+    }
+    nav .fas{
+      display: block;
+      font-size: 30px;
+    }
+    nav ul{
+      background: #CD9C15;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 25px;
+    }
+    nav ul .fas{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
+    .sub-title{
+      font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+      flex-basis: 100%;
+    }
+    .about-col-1{
+      margin-bottom: 30px;
+    }
+    .about-col-2{
+      font-size: 14px;
+    }
+    .tab-links{
+      font-size: 16px;
+      margin-right: 20px;
+    }
+    #header{
+        background-image: url(images/Backhead.png);
+    }
+  }

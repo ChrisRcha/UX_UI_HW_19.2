@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cfd219d120.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="Images/Logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About Me</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <h1>Chris Rocha</h1>
+        <p><br><span>What sets me apart?</span><br> <br> My dedication to innovation and continuous learning. I thrive on pushing the boundaries of design and exploring new trends and technologies. Whether it's experimenting with the latest design tools or staying updated on emerging UX/UI trends, I'm always eager to expand my skill set and stay ahead of the curve.</p>
+      </div>
+    </div>
+  </div>
+  <!---About Me-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+        <img src="Images/Me.jpeg">
+
+        <div class="about-col-2"></div>
+          <h1 class="sub-title">About Me</h1>
+          <p>Beyond my professional pursuits, I find joy in surrounding myself with Friends and family, engaging in meaningful conversations with diverse perspectives. I believe in the power of connection and collaboration to foster understanding and drive positive change.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links">Skills</p>
+            <p class="tab-links">Tool Belt</p>
+            <p class="tab-links">More About Me</p>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<!---About Me-->
+
+
+<!---Projects section---->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="projects-list">
+        <div class="projects">
+          <img src="Images/NOAA.png">
+          <div class="layer">
+            <h3>NOAA Redesign</h3>
+            <p>Tasked with testing and redesigning an outdated government website, our team swiftly took action upon identifying flaws and pain points through user testing. We embarked on crafting a more user-friendly site, prioritizing efficiency and ease of use for visitors.</p>
+
+          </div>
+        </div>        
+        <div class="projects">
+          <img src="Images/ActorsAndOthers.png">
+          <div class="layer">
+            <h3>Actors and Others Redesign</h3>
+            <p>"Actors and Others," is a non-profit organization, with its websites design being found to be stagnant since its inception. Our team of three undertook the journey of discovery, definition, development, and ultimately, delivery of the revamped website.</p>
+\
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!---Projects section-->
+
+<!---Javascript Mobile-->
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script> 
+<!---Javascript Mobile-->
+
+<!---footer-->
+<footer>
+  <div class="container">
+    <h1>Lets Connect!</h1>
+    <div class="footer">
+      <p>&copy; Copyright 2024.</p>
+      <p>Christiankryr@gmail.com</p>
+      <p>(801)-574-6404</p>
+      <p>LinkedIn</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
