@@ -15,7 +15,7 @@
   #header {
     width: 100%;
     height: 100vh;
-   background-image: url(Images/BackheadWide.png);
+   background-image: url(images/BackheadWide.png);
    background-size: cover;
    background-position: center;
   }
@@ -48,7 +48,7 @@
     content: '';
     width: 0;
     height: 3px;
-    background: #CD9C15;
+    background: #000000;
     position: absolute;
     left: 0;
     bottom: -6px;
